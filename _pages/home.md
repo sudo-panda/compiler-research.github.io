@@ -24,6 +24,9 @@ Interested in joining the development to to use our work? Join our [cppaas-annou
 
 We are looking for interested and passionate undergrad and graduate students. Fellowships (and open projects) currently available via [IRIS-HEP](https://iris-hep.org/fellows.html).
 
+
+<div class="horizontal-spacer"></div>
+
 ## Contributors
 
 {% assign people = "" | split: ',' %}
@@ -43,19 +46,22 @@ We are looking for interested and passionate undergrad and graduate students. Fe
 <div class="grid-container grid-container--fill">
 {% for user in sorted_people %}
   <div class="grid-element">
-  [{{ user.login }}]({{user.html_url}}) <br />
   [<img src="{{user.avatar_url}}" width="100" style="float: center" />]({{user.html_url}})
+  <br />[{{ user.login }}]({{user.html_url}}) 
   </div>
 {% endfor %}
 </div>
+
+<div class="horizontal-spacer"></div>
 
 ## Collaborators and Related Projects
 
 <div class="grid-container grid-container--fill">
 {% for coll in site.data.collabs %}
   <div class="grid-element">
-  [<img src="/assets/collab_logos/{{coll.logo}}" class="img-responsive" width="85%" style="float: center" />]({{coll.url}})
+  [<img src="/assets/collab_logos/{{coll.logo}}"  width="100" height="100" style="object-fit: contain;"/>]({{coll.url}})
   </div>
 {% endfor %}
 </div>
 
+<div class="horizontal-spacer"></div>
